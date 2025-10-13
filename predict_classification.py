@@ -6,10 +6,9 @@ import pandas as pd
 import sys
 import os
 
-# 🔧 Your trained model path
+
 MODEL_PATH = "best_classification.pth"
 
-# 🔧 Classes must match your training order
 classes = ['no_helmet', 'no_violation', 'overloading']
 
 # Load model
@@ -55,3 +54,4 @@ if __name__ == "__main__":
         print("Usage: python predict_and_store.py <image_path>")
     else:
         predict_and_store(sys.argv[1])
+    
